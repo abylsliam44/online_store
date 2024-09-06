@@ -33,7 +33,7 @@
             margin: 0 10px;
         }
         nav a:hover {
-            color: #ff6f61;
+            color: #8a8180;
         }
         .container {
             display: flex;
@@ -42,6 +42,24 @@
             width: 90%;
             max-width: 1200px;
         }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        img {
+            width: 50%; 
+            height: auto;
+            max-width: 100%; 
+            border-radius: 8px; 
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
         .sidebar {
             width: 20%;
             background-color: #f9f9f9;
@@ -51,7 +69,7 @@
         .sidebar h3 {
             margin-top: 0;
             text-transform: uppercase;
-            color: #ff6f61;
+            color: #3b3938;
         }
         .sidebar ul {
             list-style: none;
@@ -111,7 +129,7 @@
             font-style: italic;
             background-color: #f9f9f9;
             padding: 10px;
-            border-left: 5px solid #ff6f61;
+            border-left: 5px solid #a19897;
             margin: 20px 0;
         }
         .footer {
@@ -122,6 +140,34 @@
             position: relative;
             margin-top: 20px;
         }
+
+        dl {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+        }
+
+        dt {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 15px 0 5px;
+            color: #5f5f5f;
+        }
+
+        dd {
+            font-size: 1em;
+            margin: 0 0 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 115%;
+            text-align: center
+        }
+
     </style>
 </head>
 <body>
@@ -133,10 +179,10 @@
 
     
     <nav>
-        <a href="index.html">Home</a>
+        <a href="main.html">Home</a>
         <a href="catalog.html">Catalog</a>
         <a href="about.html">About Us</a>
-        <a href="contacts.html">Contacts</a>
+        <a href="contact.html">Contacts</a>
     </nav>
 
     
@@ -158,12 +204,12 @@
         <main class="main-content">
             <section>
                 <h2>Welcome to A&A Clothing Store</h2>
-                <p>Your one-stop destination for the latest fashion trends. Discover our exclusive collection for this festive season.</p>
+            <p>Your one-stop destination for the latest fashion trends. Discover our exclusive collection for this festive season.</p>
             </section>
             
             
             <figure>
-                <img src="fashion-banner.jpg" alt="Festive Clothing Banner">
+                <img src="images/cropped-AA_Logo-svg.png" alt="Festive Clothing Banner">
                 <figcaption>Celebrate with style: Our latest festive collection.</figcaption>
             </figure>
 
@@ -182,15 +228,15 @@
             
             <section class="popular-section">
                 <div class="popular-item">
-                    <img src= "images/images1.jpeg" alt = "Most Sold Item of the Week">
+                    <img src= "images/gucci.jpg" alt = "Most Sold Item of the Week">
                     <h4>"GUCCI" Jacket</h4>
                     <p>Meet the New Leather Jacket Deisgned by Bonetto.</p>
-                    <button>Read & Shop now</button>
+                    <button>Shop Now</button>
                 </div>
                 <div class="popular-item">
-                    <img src="images/images.jpeg" alt="Good Sales Especially for You">
-                    <h4>Magical Trainers</h4>
-                    <p>Pick festive clothing for men and women.</p>
+                    <img src="images/trainers.jpg" alt="Good Sales Especially for You">
+                    <h4>"Black" Trainers</h4>
+                    <p>Pick these beatiful trainers for men and women.</p>
                     <button>Shop Now</button>
                 </div>
             </section>
@@ -203,34 +249,14 @@
                 <dd>Our team is available around the clock to assist you.</dd>
             </dl>
 
-            
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="interest">Select Interest:</label>
-                <select id="interest" name="interest">
-                    <option value="clothing">Clothing</option>
-                    <option value="shoes">Shoes</option>
-                    <option value="accessories">Accessories</option>
-                </select><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-
-                <button type="submit">Submit</button>
-            </form>
 
         </main>
     </div>
 
 
     <footer class="footer">
-        <p>Created by: [Your Name], September 2024</p>
-        <p>Contact us at: info@aandaclothing.com</p>
+        <p>Created by Slamzhanov Abylay, Orunbek Azan, 2024</p>
+        
     </footer>
 
 </body>
