@@ -1,10 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&A Clothing Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #333;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            color: #ff6f61;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+            text-transform: uppercase;
+            color: #ff6f61;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            width: 60%;
+            padding: 0 20px;
+        }
+        .main-content img {
+            width: 100%;
+            height: auto;
+        }
+        .main-content .highlight {
+            background-color: #eee;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        .popular-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .popular-item {
+            width: 48%;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .popular-item img {
+            width: 100%;
+            height: auto;
+        }
+        .popular-item h4 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .popular-item p {
+            font-size: 14px;
+            margin: 0 0 10px;
+        }
+        blockquote {
+            font-style: italic;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid #ff6f61;
+            margin: 20px 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+
     
+    <header>
+        <h1>A&A Clothing Store</h1>
+    </header>
+
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="about.html">About Us</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+
+    
+    <div class="container">
+        
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Bags & Accessories</a></li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Gifts</a></li>
+            </ul>
+        </aside>
+
+        
+        <main class="main-content">
+            <section>
+                <h2>Welcome to A&A Clothing Store</h2>
+                <p>Your one-stop destination for the latest fashion trends. Discover our exclusive collection for this festive season.</p>
+            </section>
+            
+            
+            <figure>
+                <img src="fashion-banner.jpg" alt="Festive Clothing Banner">
+                <figcaption>Celebrate with style: Our latest festive collection.</figcaption>
+            </figure>
+
+            
+            <div class="highlight">
+                <h2>Decide Your Destiny Yourself, Dress to Your Likinge</h2>
+                <p>Celebrate the festive season with our exclusive collection. Watch the video and shop now.</p>
+                <button>Watch Video & Shop</button>
+            </div>
+
+            
+            <blockquote>
+                "Fashion is the armor to survive the reality of everyday life." — Azan Orunbek (CEO)
+            </blockquote>
+
+            
+            <section class="popular-section">
+                <div class="popular-item">
+                    <img src= "images/images1.jpeg" alt = "Most Sold Item of the Week">
+                    <h4>"GUCCI" Jacket</h4>
+                    <p>Meet the New Leather Jacket Deisgned by Bonetto.</p>
+                    <button>Read & Shop now</button>
+                </div>
+                <div class="popular-item">
+                    <img src="images/images.jpeg" alt="Good Sales Especially for You">
+                    <h4>Magical Trainers</h4>
+                    <p>Pick festive clothing for men and women.</p>
+                    <button>Shop Now</button>
+                </div>
+            </section>
+
+            
+            <dl>
+                <dt>Free Shipping:</dt>
+                <dd>All orders above $100 come with free shipping.</dd>
+                <dt>24/7 Support:</dt>
+                <dd>Our team is available around the clock to assist you.</dd>
+            </dl>
+
+            
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="interest">Select Interest:</label>
+                <select id="interest" name="interest">
+                    <option value="clothing">Clothing</option>
+                    <option value="shoes">Shoes</option>
+                    <option value="accessories">Accessories</option>
+                </select><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </main>
+    </div>
+
+
+    <footer class="footer">
+        <p>Created by: [Your Name], September 2024</p>
+        <p>Contact us at: info@aandaclothing.com</p>
+    </footer>
+
 </body>
 </html>
